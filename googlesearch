@@ -1,0 +1,14 @@
+#!/bin/bash
+
+case $1 in
+	"-py")
+		output=$(sh $HOME/.local/bin/tuxi -r -q "$2")
+		;;
+	"")
+		output=$(sh $HOME/.local/bin/tuxi -r -q "$(echo "" | dmenu -p "ask tuxi")")
+		;;
+	"-err")
+		output="Sorry, I didn't get that"
+		;;
+esac
+gtts-cli "$output" | mpg123 -

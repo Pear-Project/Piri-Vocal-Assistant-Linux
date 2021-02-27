@@ -82,7 +82,9 @@ The assistant also uses google's tts, speech recognition and translator, as they
 
 ## Development info:
 The Modules are(on Linux) in ~/.local/share/vAssistant/
+
 The Sounds (also on Linux) are in ~/.local/share/vAssistant/sounds/
+
 When developing your own Modules, make sure that you're not obstructing the recognizier for other modules
 
 ## Notes:

@@ -68,7 +68,7 @@ after that, you clone the github and run the installer script
 
 You can launch the assistant(vAssitant.py) from the terminal:
 - You will see some warnings/errors at first, which are normal, after that it will print out "talk(activator)"
-    - the activator is "hey Assistant" on standart, but can be changed at line 213 of the pyhton script
+    - the activator is "hey Assistant" or "ok Assistant" on standart, but can be changed at line 217 and 220 of the pyhton script
 - it will print what was recognized, and if the activator is correct it will print "talk", you will also hear a sound
 - then it will listen to the actual command
 

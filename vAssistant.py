@@ -129,14 +129,17 @@ def translation(targetLang):
 
 def listen(listening, source):
     if listening == 0:
-        os.system("playerctl pause") #pauses music so the assistant can be understood better
+        playing=subprocess.check_output("playerctl status", shell=True) # check if media is playing, to not just show a random error/warning
+        if playing.lower.__contains__("playing"):
+            os.system("playerctl pause") #pauses music so the assistant can be understood better
+            stoppedmusic=False
         os.system("paplay $HOME/.local/vAssistant/listening.wav")
         listening = 1
         print("talk")
         audio_text=r.listen(source)
         print("done")
         if audio_text == "":
-            print("nothing said")
+            print("nothing said, nothing done")
 
         try:
             text = r.recognize_google(audio_text) #converts speech to text
@@ -194,7 +197,8 @@ def listen(listening, source):
             print("error (listener)")
             listening  = 0
             os.system("sh $HOME/.local/vAssistant/googlesearch -err") # if an error occured it launches the googlesearch module to say an error message
-        os.system("playerctl play") #launches the previously stopped music again
+        if stoppedmusic==True: #checks if media got stopped previously, to not start media paused by the user
+            os.system("playerctl play") #launches the previously stopped music again
 
 while listening != 1:
     with sr.Microphone() as source:
@@ -212,6 +216,8 @@ while listening != 1:
                     activatorText=activatorText.lower()
                     if activatorText.__contains__("hey assistant"): #checks if the activator was the set activator (the activator has to be lowercase!)
                         listen(listening, source) #calls the command function and passes two necessary values
+                    elif activatorText.__contains__("ok assistant"):
+                        listen(listening, source)
                     else:
                         print(activatorText) #prints the text said by the user for development reasons
                         print("activator not correct") #prints the error in the command line (only visible if ran from terminal)

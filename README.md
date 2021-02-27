@@ -3,7 +3,7 @@
 vAssistant is a virtual assistant written in python, 
 which supports modules in virtually any programming language.
 
-You only need:
+For developing your own Modules, you only need:
 - a programming language which can be called via python or the shell
 - some basic python knowledge to be able to call the module(the source should make a good example)
 

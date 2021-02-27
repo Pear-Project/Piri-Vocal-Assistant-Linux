@@ -89,4 +89,4 @@ When developing your own Modules, make sure that you're not obstructing the reco
 the text to speech is a bit slow on ubuntu, this will probably be fixed in the next merge
 some dependencies might be called different depending on what repositories you use, so if the assitant isn't working correctly, just check if everything is installed properly
 
-I will happily accept any tests/installation guides on other Linux distributions/Windows/MacOS
+I will happily accept any tests/installation guides for other Linux distributions/Windows/MacOS

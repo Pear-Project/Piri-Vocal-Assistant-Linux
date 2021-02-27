@@ -59,8 +59,8 @@ Install the dependcies:
 ```
 after that, you clone the github and run the installer script
 ```sh
-    git clone (missing)
-    cd (missing)
+    git clone https://github.com/axtloss/vAssistant.git
+    cd vAssitant
     sh installer.sh
 ```
 
@@ -79,6 +79,11 @@ The assitant uses for it's google search [tuxi](https://github.com/Bugswriter/tu
 the Stock and in-browser search however use duckduckgo as it's search engine
 
 The assistant also uses google's tts, speech recognition and translator, as they proved to work the best
+
+## Development info:
+The Modules are(on Linux) in ~/.local/share/vAssistant/
+The Sounds (also on Linux) are in ~/.local/share/vAssistant/sounds/
+When developing your own Modules, make sure that you're not obstructing the recognizier for other modules
 
 ## Notes:
 the text to speech is a bit slow on ubuntu, this will probably be fixed in the next merge

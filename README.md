@@ -68,8 +68,8 @@ after that, you clone the github and run the installer script
 
 You can launch the assistant(vAssitant.py) from the terminal:
 - You will see some warnings/errors at first, which are normal, after that it will print out "talk(activator)"
-    - the activator is "hey Assitant" on standart, but can be changed at line 213 of the pyhton script
-- it will print what heared, and if the activator is correct it will print "talk", you will also hear a sound
+    - the activator is "hey Assistant" on standart, but can be changed at line 213 of the pyhton script
+- it will print what was recognized, and if the activator is correct it will print "talk", you will also hear a sound
 - then it will listen to the actual command
 
 Or, you put the vAssistant.py in your autostart and then log out, and back in. The assistant will be started on login after that.
@@ -86,9 +86,8 @@ The Modules are(on Linux) in ~/.local/share/vAssistant/
 The Sounds (also on Linux) are in ~/.local/share/vAssistant/sounds/
 
 When developing your own Modules, make sure that you're not obstructing the recognizier for other modules
-
 ## Notes:
 the text to speech is a bit slow on ubuntu, this will probably be fixed in the next merge
-some dependencies might be called different depending on what repositories you use, so if the assitant isn't working correctly, just check if everything is installed properly
+some dependencies might be called different depending on what repositories you use, so if the assistant isn't working correctly, just check if everything is installed properly
 
 I will happily accept any tests/installation guides for other Linux distributions/Windows/MacOS

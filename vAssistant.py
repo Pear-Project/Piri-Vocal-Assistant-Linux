@@ -4,10 +4,10 @@ import speech_recognition as sr
 import os
 from gtts import gTTS
 import time
+import subprocess
 
 r = sr.Recognizer()
-listening = 0
-
+os.system("rm $HOME/.local/vAssistant/listening.lock")
 def translation(targetLang):
     targetLangS="en"
     targetLang=targetLang.lower()
@@ -127,14 +127,14 @@ def translation(targetLang):
         targetLangS="zh"
     return(targetLangS)
 
-def listen(listening, source):
-    if listening == 0:
+def listen(source):
+    if os.path.isfile(+"$HOME/.local/vAssistant/listening.lock") == "False":
+        os.system("echo 'LISTENING' > $HOME/.local/vAssistant/listening.lock")
         playing=subprocess.check_output("playerctl status", shell=True) # check if media is playing, to not just show a random error/warning
         if playing.lower.__contains__("playing"):
             os.system("playerctl pause") #pauses music so the assistant can be understood better
             stoppedmusic=False
         os.system("paplay $HOME/.local/vAssistant/listening.wav")
-        listening = 1
         print("talk")
         audio_text=r.listen(source)
         print("done")
@@ -191,22 +191,22 @@ def listen(listening, source):
                 os.system("xdg-open 'https://en.wikipedia.org/wiki/"+wiki+"'") # search for the term specified by the user via wikipedia
             else:
                 os.system("sh $HOME/.local/vAssistant/googlesearch -py '"+text+"'") # launches the googlesearch module and passes the term to search for further processing
-                listening = 0
 
         except:
             print("error (listener)")
-            listening  = 0
             os.system("sh $HOME/.local/vAssistant/googlesearch -err") # if an error occured it launches the googlesearch module to say an error message
         if stoppedmusic==True: #checks if media got stopped previously, to not start media paused by the user
             os.system("playerctl play") #launches the previously stopped music again
+        os.system("rm $HOME/.local/vAssistant/listening.lock")
 
-while listening != 1:
+while not os.path.isfile("/home/ali/.local/vAssistant/listening.lock"):
     with sr.Microphone() as source:
             restart = 0
             activatorText=""
             print("talk (activator)")
             audio_text=r.listen(source) #listens for the activator
             print("done (activator)")
+
 
             print(audio_text)
             if audio_text is not None:
@@ -215,9 +215,9 @@ while listening != 1:
                     print(activatorText) #prints the text said by the user for development reasons
                     activatorText=activatorText.lower()
                     if activatorText.__contains__("hey assistant"): #checks if the activator was the set activator (the activator has to be lowercase!)
-                        listen(listening, source) #calls the command function and passes two necessary values
+                        listen(source) #calls the command function and passes two necessary values
                     elif activatorText.__contains__("ok assistant"):
-                        listen(listening, source)
+                        listen(source)
                     else:
                         print(activatorText) #prints the text said by the user for development reasons
                         print("activator not correct") #prints the error in the command line (only visible if ran from terminal)

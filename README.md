@@ -38,8 +38,8 @@ you will first have to install the dependencies:
 
 after that, you clone the github and run the installer script
 ```sh
-    git clone (missing)
-    cd (missing)
+    git clone https://github.com/axtloss/vAssistant.git
+    cd vAssistant
     sh installer.sh
 ```
 

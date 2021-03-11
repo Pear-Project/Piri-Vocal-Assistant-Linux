@@ -36,7 +36,7 @@ you will first have to install the dependencies:
     sudo pacman -S playerctl
 ```
 
-after that, you clone the github and run the installer script
+after that, you clone the repository and run the installer script
 ```sh
     git clone https://github.com/axtloss/vAssistant.git
     cd vAssistant
@@ -57,7 +57,7 @@ Install the dependcies:
     sudo apt install golang-go -y
     sudo apt install playerctl -y
 ```
-after that, you clone the github and run the installer script
+after that, you clone the repository and run the installer script
 ```sh
     git clone https://github.com/axtloss/vAssistant.git
     cd vAssitant

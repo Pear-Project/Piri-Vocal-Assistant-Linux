@@ -24,6 +24,7 @@ You can launch the assistant(vAssitant.py) from the terminal:
 Or, you put the vAssistant.py in your autostart and then log out, and back in. The assistant will be started on login after that.
 
 ## Telemetry/Data collection:
-Piri does not directly collect any personal data nor recordings from users, because we(devs.) don't need to. Data can be collected by 3rd parties such as google.
+Piri does not directly collect any personal data nor recordings from users, because we(devs.) don't need to. Data can be collected by 3rd parties such as google(Google Text to Speech)
 
 The assistant also uses Google's TTS URL API (http://www.google.com/speech-api/v1/synthesize?lang=en-us&text=example+of+a+random+text+here+xd)
+The text to speech is powered by Google

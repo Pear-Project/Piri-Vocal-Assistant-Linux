@@ -13,13 +13,31 @@ It was written in Python and Shell (bash)
     - sound when it is waitng for commands
     - sound when it fails
 
-## Installation:
+## Installation(from source):
 - I added a failsafe, so you cannot run it as root :)
 - git clone the project
 - cd into it
 - `./install.sh` _if it shows Permission Denied error, you have to `chmod +x install.sh` and re-run `./install.sh`_
 - launch it from the application launcer(i.e. launchpad, application menu, app list etc.)
 
+## Installation(from .deb package):
+- First install the requirements _(you can copy the script below, or run command by command)_
+```sh
+#!/bin/bash
+sudo apt-get install python3-pip -y
+pip3 install SpeechRecognition pydub
+pip3 install gtts
+pip3 install jq
+pip3 install googletrans==3.1.0a0
+sudo apt install python3-pyaudio -y
+sudo apt install golang-go -y
+sudo apt install playerctl -y
+```
+- Then you can proceed with normal debian package installation
+    ```sh
+    sudo dpkg -i /path/to/xyz.pearos.piri-assistant.deb
+    #change 'path/to/' with your actual path :p
+    ```
 ## Usage:
 
 You can launch the assistant from terminal: `cd /path/to/piri.py && ./piri.py`

@@ -1,0 +1,103 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,107,49)
+  { IconView1 IconView
+    MoveScaled(-1,0,38,49)
+  }
+  { Panel1 Panel
+    MoveScaled(0,0,37,49)
+    { chk_enable_piri CheckBox
+      MoveScaled(8,34,24,4)
+      Text = ("Enabe Ask Piri")
+    }
+    { lbl_copyright Label
+      MoveScaled(0,45,37,3)
+      Font = Font["Bitstream,-3"]
+      Text = ("Copyright (c) 2021 Alexandru Balan w/ Axtlos\nunder the PearProject Team. All rights reserved")
+    }
+    { pic_logo PictureBox
+      MoveScaled(5,8,24,24)
+      Picture = Picture["piri_icon.png"]
+      Mode = PictureBox.Contain
+    }
+  }
+  { Label1 Label
+    MoveScaled(40,2,65,9)
+    Font = Font["Bitstream,Bold,-1"]
+    Text = ("Piri helps you get things done, just by asking. You can't save files on your\nPear using Piri, you can t dictate a note, but you can check the weather \nand more!")
+  }
+  { chk_listen CheckBox
+    MoveScaled(64,12,24,4)
+    Font = Font["Bitstream,Bold,-1"]
+    Text = ("Listen for \"Hey Piri\"")
+    Value = CheckBox.True
+  }
+  { chk_allow_when_locked CheckBox
+    MoveScaled(64,15,24,4)
+    Font = Font["Bitstream,Bold,-1"]
+    Text = ("Allow Piri when locked")
+  }
+  { label_keyboard_shortcut Label
+    MoveScaled(41,20,21,4)
+    Font = Font["Bitstream,Bold,-1"]
+    Alignment = Align.Right
+    Text = ("Keyboard Shortcut:")
+  }
+  { lbl_piri_language Label
+    MoveScaled(41,23,21,4)
+    Font = Font["Bitstream,Bold,-1"]
+    Alignment = Align.Right
+    Text = ("Language:")
+  }
+  { lbl_piri_voice Label
+    MoveScaled(41,27,21,4)
+    Font = Font["Bitstream,Bold,-1"]
+    Alignment = Align.Right
+    Text = ("Piri voice:")
+  }
+  { MenuButton1 MenuButton
+    MoveScaled(64,20,37,3)
+    Text = ("Super + Space")
+  }
+  { MenuButton2 MenuButton
+    MoveScaled(64,24,37,3)
+    Text = ("English (United States)")
+  }
+  { MenuButton3 MenuButton
+    MoveScaled(64,28,37,3)
+    Text = ("American (Shemale)")
+  }
+  { chk_show_piri CheckBox
+    MoveScaled(42,42,24,4)
+    Font = Font["Bitstream,Bold,-1"]
+    Text = ("Show Piri in menu bar")
+    Value = CheckBox.True
+  }
+  { btn_piri_suggest_and_privacy Button
+    MoveScaled(67,42,28,3)
+    Font = Font["Bitstream,Bold,-1"]
+    Text = ("Piri Suggestions & Privacy") & "..."
+  }
+  { btn_about Button
+    MoveScaled(98,42,3,3)
+    Text = ("?")
+  }
+  { lbl_voice_feedback Label
+    MoveScaled(41,32,21,4)
+    Font = Font["Bitstream,Bold,-1"]
+    Alignment = Align.Right
+    Text = ("Voice Feedback")
+  }
+  { radio_on RadioButton
+    MoveScaled(64,32,7,4)
+    Font = Font["Bitstream,Bold,-1"]
+    Text = ("On")
+    Value = True
+  }
+  { radio_off RadioButton
+    MoveScaled(72,32,7,4)
+    Font = Font["Bitstream,Bold,-1"]
+    Text = ("Off")
+  }
+}

@@ -1,0 +1,34 @@
+#!/bin/python3
+
+import speech_recognition as sr
+import os
+import re
+import time
+import sys
+
+r = sr.Recognizer()
+listening = 0
+
+def listen(listening, source):
+    if listening != 1:
+        listening = 1
+        print("Say 'hey Piri'")
+        audio_text=r.listen(source)
+        #print("you said something")
+        if audio_text == "":
+            print("nothing said")
+        try:
+            text = r.recognize_google(audio_text)
+            print(text)
+            if text.__contains__("hey Siri"):
+                os.system("/usr/share/piri-assistant/piri.py")
+                #os.system('kill %d' % os.getpid())
+            else:
+                print("something wrong")
+                listening = 0
+        except:
+            print("The Listener encountered an error. Retry")
+            listening  = 0
+while listening != 1:
+    with sr.Microphone() as source:
+        listen(listening, source)

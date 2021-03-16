@@ -1,0 +1,24 @@
+' Gambas class file
+
+Public str_debug As String
+
+Public Sub Form_Open()
+  Me.X = Desktop.W - Me.W
+  Me.Y = 0
+  'live_bg.Animation = Animation.Load("new.gif")
+  Shell "ffplay -nodisp -autoexit /tmp/piri/reply.mp3 >/dev/null 2>&1"
+  Shell "/usr/share/piri/main.py" 
+End
+
+Public Sub btn_close_MouseDown()
+  FMain.Close
+End
+
+Public Sub btn_about_MouseDown()
+  FAbout.Show
+End
+
+
+Public Sub Button1_Click()
+  FAbout.Show
+End

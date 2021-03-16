@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /usr/share/piri-assistant
+echo $(pwd)
+
+./piri.py
+

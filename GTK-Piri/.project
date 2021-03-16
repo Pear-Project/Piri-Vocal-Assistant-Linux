@@ -1,0 +1,13 @@
+# Gambas Project File 3.0
+Title=Piri - GTK Voice Assistant
+Startup=FMain
+Version=11.0.0
+Component=gb.image
+Component=gb.gtk
+Component=gb.form
+Description="Piri is a Voice Assistant, with Speech recognition and Text to Speech, made by the PearProject Team (Alexandru Balan, Andrei Muntean and Axtlos). It was made as an exclusive app for pearOS."
+Authors="Frontend, UI, UX - Alexandru Balan\nBackend(python script) - Axtlos\nPiri Logo - Andrei muntean"
+TabSize=2
+Language=en_US
+Vendor=PearProject
+Packager=1

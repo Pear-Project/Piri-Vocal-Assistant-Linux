@@ -1,0 +1,63 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,150,98)
+  { Panel1 Panel
+    MoveScaled(0,0,39,41)
+    { ImageView1 ImageView
+      MoveScaled(9,3,21,21)
+    }
+    { chk_enable_piri CheckBox
+      MoveScaled(8,28,24,4)
+      Text = ("Enabe Ask Piri")
+    }
+  }
+  { Label1 Label
+    MoveScaled(42,3,52,9)
+    Text = ("Piri helps you get things done, just by asking. You can't save \nfiles on your. Pear using Piri, you can t dictate a note, but \nyou can check the weather and more!")
+  }
+  { chk_listen CheckBox
+    MoveScaled(64,12,24,4)
+    Text = ("Listen for \"Hey Piri\"")
+  }
+  { chk_allow_when_locked CheckBox
+    MoveScaled(64,15,24,4)
+    Text = ("Allow Piri when locked")
+  }
+  { label_keyboard_shortcut Label
+    MoveScaled(41,19,21,4)
+    Text = ("Keyboard Shortcut:")
+    Alignment = Align.Right
+  }
+  { lbl_piri_language Label
+    MoveScaled(41,23,21,4)
+    Text = ("Language:")
+    Alignment = Align.Right
+  }
+  { lbl_piri_voice Label
+    MoveScaled(41,27,21,4)
+    Text = ("Piri voice:")
+    Alignment = Align.Right
+  }
+  { MenuButton1 MenuButton
+    MoveScaled(64,20,21,3)
+  }
+  { MenuButton2 MenuButton
+    MoveScaled(64,24,21,3)
+  }
+  { MenuButton3 MenuButton
+    MoveScaled(64,28,21,3)
+  }
+  { chk_show_piri CheckBox
+    MoveScaled(42,34,24,4)
+    Text = ("Show Piri in menu bar")
+  }
+  { btn_piri_suggest_and_privacy Button
+    MoveScaled(67,34,27,3)
+    Text = ("Piri Suggestions & Privacy") & "..."
+  }
+  { btn_about Button
+    MoveScaled(96,34,2,2)
+    Text = ("?")
+  }
+}

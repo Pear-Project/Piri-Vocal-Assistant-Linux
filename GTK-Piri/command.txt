@@ -1,0 +1,2 @@
+curl "http://www.google.com/speech-api/v1/synthesize?lang=en-us&text=pearOS+is+the+best+operating+system+lol --output /tmp/piri/reply.mp3  ;this will download the string in tmp
+ffplay -nodisp -autoexit /tmp/piri/reply.mp3 >/dev/null 2>&1    ;this will play the song

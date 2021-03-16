@@ -1,0 +1,41 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,67,38)
+  Icon = Picture["piri_icon.png"]
+  Border = False
+  Transparent = True
+  { dark_bg PictureBox
+    MoveScaled(0,3,60,34)
+    Picture = Picture["piri_background.png"]
+    Mode = PictureBox.Contain
+  }
+  { live_bg MovieBox
+    MoveScaled(1.4286,5,58,30)
+    Expand = True
+    Animation = Animation.Load("a94aee835e16cff4f14c83dac8ffbe10.gif")
+    Stretch = True
+    Alignment = Align.Center
+  }
+  { lbl_start Label
+    MoveScaled(15,6,34,4)
+    Font = Font["Bitstream,+3"]
+    Foreground = &HFFFFFF&
+    Text = ("What can I help you with?")
+  }
+  { btn_close PictureBox
+    MoveScaled(2,5,3,3)
+    ToolTip = ("Close Piri")
+    Picture = Picture["close.png"]
+    Mode = PictureBox.Contain
+  }
+  { btn_about PictureBox
+    MoveScaled(2,32,3,3)
+    Picture = Picture["about.png"]
+    Mode = PictureBox.Contain
+  }
+  { Button1 Button
+    MoveScaled(2,32,3,3)
+    Border = False
+  }
+}

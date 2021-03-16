@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Piri
+Comment=pearOS Voice Assistant
+GenericName=vAssistant
+Icon=/usr/share/icons/piri-logo.png
+Categories=Utility;X-SuSE-DesktopUtility;
+Exec=/usr/bin/piri
+StartupNotify=false
+Terminal=false
+Type=Application
+StartupWMClass=latte-dock
+X-DBUS-StartupType=unique
+X-KDE-PluginInfo-Author=Alexandru Balan
+X-KDE-PluginInfo-Email=alex@pearos.xyz
+X-KDE-PluginInfo-Version=11.0-beta
+X-KDE-PluginInfo-Website=https://piri.pearos.xyz
+X-KDE-StartupNotify=false

@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os
+from distutils.core import setup, Extension
+
+build = 'build'
+srcdir = '@srcdir@'
+top_builddir = '@top_builddir@'
+top_srcdir = '@top_srcdir@'
+
+try:
+
+    if srcdir != '.':
+        buffer = file(os.path.join(srcdir, 'Recode.c')).read()
+        file('Recode.c', 'w').write(buffer)
+
+    setup(ext_modules=[
+        Extension('Recode', ['Recode.c'],
+                  include_dirs=[top_builddir, os.path.join(top_srcdir, 'src')],
+                  libraries=['recode'])
+        ])
+
+finally:
+
+    if srcdir != '.':
+        if os.path.exists('Recode.c'):
+            os.remove('Recode.c')

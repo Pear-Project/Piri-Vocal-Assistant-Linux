@@ -1,0 +1,38 @@
+Authors of Recode
+
+The following contributions warranted legal paper exchanges with the
+Free Software Foundation.  Also see files ChangeLog and THANKS.
+
+RECODE  François Pinard         CANADA, 1949
+Assigns the program.
+
+RECODE  Odyssee Recherches Appliquees
+Disclaims work by François Pinard
+
+RECODE	Ulrich Drepper	Germany 1968	1996-03-25
+Assigns all past and future changes.
+drepper@gnu.ai.mit.edu
+
+RECODE  Bruno Haible    Germany/France 1965     1999-09-08
+Assigns past and future changes.
+haible@clisp.cons.org
+
+LIBUTF8 Bruno Haible    Germany/France 1965     1999-12-08
+Assigns program and future changes.
+haible@clisp.cons.org
+
+LIBICONV        Bruno Haible    Germany/France 1965     1999-12-08
+Assigns program and future changes.
+haible@clisp.cons.org
+
+RECODE	Linus Walleij	Sweden 1972	2000-07-03
+Assigns past and future changes (rtf.c).
+triad@df.lth.se
+
+RECODE  Otfried Cheong  Germany 1964    2000-10-19
+Assigns past and future changes (utfmule.c, mkutf2mule.pl).
+otfried@cs.uu.nl
+
+RECODE  Bruno Haible    Germany/France 1965     2001-03-09
+Assigns past and future changes.
+haible@clisp.cons.org

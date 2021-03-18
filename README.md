@@ -35,6 +35,7 @@ pip3 install googletrans==3.1.0a0
 sudo apt install python3-pyaudio -y
 sudo apt install golang-go -y
 sudo apt install playerctl -y
+sudo apt install recode -y
 ```
 - Then you can proceed with normal debian package installation
     ```sh

@@ -25,6 +25,9 @@ It was written in Python and Shell (bash)
 ```sh
 #!/bin/bash
 sudo apt-get install python3-pip -y
+sudo add-apt-repository ppa:gambas-team/gambas-daily -y
+sudo apt update
+sudo apt-get install gambas3 -y
 pip3 install SpeechRecognition pydub
 pip3 install gtts
 pip3 install jq

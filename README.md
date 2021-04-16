@@ -20,28 +20,12 @@ It was written in Python and Shell (bash)
 - `./install.sh` _if it shows Permission Denied error, you have to `chmod +x install.sh` and re-run `./install.sh`_
 - launch it from the application launcer(i.e. launchpad, application menu, app list etc.)
 
-~~## Installation(from .deb package):
-- First install the requirements _(you can copy the script below, or run command by command)_
-~~```sh
-#!/bin/bash
-sudo apt-get install python3-pip -y
-sudo add-apt-repository ppa:gambas-team/gambas-daily -y
-sudo apt update
-sudo apt-get install gambas3 -y
-pip3 install SpeechRecognition pydub
-pip3 install gtts
-pip3 install jq
-pip3 install googletrans==3.1.0a0
-sudo apt install python3-pyaudio -y
-sudo apt install golang-go -y
-sudo apt install playerctl -y
-sudo apt install recode -y
-```
+
 ~~ - Then you can proceed with normal debian package installation ~~
     ```sh
     sudo dpkg -i /path/to/xyz.pearos.piri-assistant.deb
   ~~  #change 'path/to/' with your actual path :p
-    ```~~
+    ```
 ## Usage:
 
 You can launch the assistant from terminal: `cd /path/to/piri.py && ./piri.py`
@@ -64,3 +48,57 @@ The text to speech is powered by Google
 ## Notes
 I did not tested the consistency of the app, I ran basic tests. Feel free to improove it. In case if something goes wrong, start an issue. Thanks :p
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Useless, do not read the isntallation from deb package
+
+~~## Installation(from .deb package): 
+- First install the requirements _(you can copy the script below, or run command by command)_
+~~```sh
+#!/bin/bash
+sudo apt-get install python3-pip -y
+sudo add-apt-repository ppa:gambas-team/gambas-daily -y
+sudo apt update
+sudo apt-get install gambas3 -y
+pip3 install SpeechRecognition pydub
+pip3 install gtts
+pip3 install jq
+pip3 install googletrans==3.1.0a0
+sudo apt install python3-pyaudio -y
+sudo apt install golang-go -y
+sudo apt install playerctl -y
+sudo apt install recode -y
+```

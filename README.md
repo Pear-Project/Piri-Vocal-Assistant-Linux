@@ -20,9 +20,9 @@ It was written in Python and Shell (bash)
 - `./install.sh` _if it shows Permission Denied error, you have to `chmod +x install.sh` and re-run `./install.sh`_
 - launch it from the application launcer(i.e. launchpad, application menu, app list etc.)
 
-## Installation(from .deb package):
+~~## Installation(from .deb package):
 - First install the requirements _(you can copy the script below, or run command by command)_
-```sh
+~~```sh
 #!/bin/bash
 sudo apt-get install python3-pip -y
 sudo add-apt-repository ppa:gambas-team/gambas-daily -y
@@ -37,11 +37,11 @@ sudo apt install golang-go -y
 sudo apt install playerctl -y
 sudo apt install recode -y
 ```
-- Then you can proceed with normal debian package installation
+~~ - Then you can proceed with normal debian package installation ~~
     ```sh
     sudo dpkg -i /path/to/xyz.pearos.piri-assistant.deb
-    #change 'path/to/' with your actual path :p
-    ```
+  ~~  #change 'path/to/' with your actual path :p
+    ```~~
 ## Usage:
 
 You can launch the assistant from terminal: `cd /path/to/piri.py && ./piri.py`

@@ -56,17 +56,17 @@
     Alignment = Align.Right
     Text = ("Piri voice:")
   }
-  { MenuButton1 MenuButton
+  { mnu_keyboard MenuButton
     MoveScaled(64,20,37,3)
     Text = ("Super + Space")
   }
-  { MenuButton2 MenuButton
+  { mnu_language MenuButton
     MoveScaled(64,24,37,3)
     Text = ("English (United States)")
   }
-  { MenuButton3 MenuButton
+  { mnu_piri_voice MenuButton
     MoveScaled(64,28,37,3)
-    Text = ("American (Shemale)")
+    Text = ("American (Male)")
   }
   { chk_show_piri CheckBox
     MoveScaled(42,42,24,4)

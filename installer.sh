@@ -33,3 +33,5 @@ cp $HOME/go/bin/pup $HOME/.local/bin/
 sudo apt-get install jq -y
 sudo apt-get install ffmpeg -y
 
+# creating /usr/bin/piri as executable
+sudo chmod +x /usr/bin/piri

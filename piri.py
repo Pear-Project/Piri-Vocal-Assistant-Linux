@@ -17,7 +17,7 @@ listening = 0
 
 def listen(listening, source):
     if listening == 0:
-        os.system("playerctl pause") #pauses music so the assistant can be understood better
+        os.system("playerctl pause") # pauses music so the assistant can be understood better
         listening = 1
         os.system("ffplay -nodisp -autoexit /usr/share/piri-assistant/piri-open.mp3 >/dev/null 2>&1")
         print("talk")
@@ -27,10 +27,10 @@ def listen(listening, source):
             print("nothing said")
 
         try:
-            text = r.recognize_google(audio_text) #converts speech to text
+            text = r.recognize_google(audio_text) # converts speech to text
             print(text)
             if text.__contains__("test"):
-                activator, translation3, filler, targetLang=text.split(" ") #splits the command into each word for parsing  #no ideea what s this
+                activator, translation3, filler, targetLang=text.split(" ") # splits the command into each word for parsing  #no ideea what s this
             elif text.__contains__("in browser"):
                 #strips the unnecesary parts of the command
                 suche=text.replace("in browser", "")

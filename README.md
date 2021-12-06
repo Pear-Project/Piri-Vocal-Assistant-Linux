@@ -6,12 +6,12 @@ It was written in Python and Shell (bash)
 ## Features
 - Easily modifiable source
 - Simple way to add (custom) modules
-- some hardcoded features such as:
-    - google search
-    - app opener
-    - good looking UI
-    - sound when it is waitng for commands
-    - sound when it fails
+- Some hardcoded features such as:
+    - Google search
+    - App opener
+    - Good looking UI
+    - Sound when it is waitng for commands
+    - Sound when it fails
 
 ## Installation(from source):
 - I added a failsafe, so you cannot run it as root :)
@@ -33,20 +33,20 @@ You can launch the assistant from terminal: `cd /path/to/piri.py && ./piri.py`
     - it does not need an activator when launched from terminal. Execute it and you are good to go
     - if you want to test it WITH the activator, `cd /path/to/piri.py && ./piri-activator`
       - say `hey Piri` _if it has been run from piri-activator_
-- it will print what was recognized, and if the activator is correct it will print "talk", you will also hear a sound
+- it will print what was recognized and if the activator is correct it will print "talk", you will also hear a sound
 - say your commands, and Piri will _try_ to execute them.
 
 Or, you put the vAssistant.py in your autostart and then log out, and back in. The assistant will be started on login after that.
 
 ## Telemetry/Data collection:
-Piri does not directly collect any personal data nor recordings from users, because we(devs.) don't need to. Data can be collected by 3rd parties such as google(Google Text to Speech)
+Piri does not directly collect any personal data nor recordings from users, because we (devs) don't need to. Data can be collected by 3rd parties such as Google (Google Text to Speech)
 
 The assistant also uses Google's TTS URL API (http://www.google.com/speech-api/v1/synthesize?lang=en-us&text=example+of+a+random+text+here+xd)
 The text to speech is powered by Google
 
 
 ## Notes
-I did not tested the consistency of the app, I ran basic tests. Feel free to improove it. In case if something goes wrong, start an issue. Thanks :p
+I did not test the consistency of the app, I ran basic tests. Feel free to improove it. In case if something goes wrong, start an issue. Thanks :p
 
 
 
@@ -83,7 +83,7 @@ I did not tested the consistency of the app, I ran basic tests. Feel free to imp
 
 
 
-## Useless, do not read the isntallation from deb package
+## Useless, do not read the installation from deb package
 
 ~~## Installation(from .deb package): 
 - First install the requirements _(you can copy the script below, or run command by command)_

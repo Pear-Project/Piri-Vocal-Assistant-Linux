@@ -38,4 +38,8 @@
     MoveScaled(2,32,3,3)
     Border = False
   }
+  { PictureBox1 PictureBox
+    MoveScaled(23,14,16,16)
+    Picture = Picture["piri.png"]
+  }
 }

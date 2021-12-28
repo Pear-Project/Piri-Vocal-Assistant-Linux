@@ -13,29 +13,56 @@ It was written in Python and Shell (bash)
     - Sound when it is waitng for commands
     - Sound when it fails
 
-## Installation(from source):
-- I added a failsafe, so you cannot run it as root :)
-- git clone the project
-- cd into it
-- `./install.sh` _if it shows Permission Denied error, you have to `chmod +x install.sh` and re-run `./install.sh`_
-- launch it from the application launcer(i.e. launchpad, application menu, app list etc.)
 
-<!---
- - Then you can proceed with normal debian package installation
-    ```sh
-    sudo dpkg -i /path/to/xyz.pearos.piri-assistant.deb
-    #change 'path/to/' with your actual path :p
-    ```
- -->
+## Installation (from source):
+I have created a rudimentary install file that can be ran by doing `python3 install-dependencies.py`, that just installs the dependencies for you in pip, but for your system dependencies, you'll have to do it through your package manager or any other way
+
+
+**N/B:** I have personally experienced a lot of problems with installing PyAudio through pip, so if you also do, please install it through your package manager. Usually available as `python3-PyAudio` or `python3-pyaudio`
+
+
+**Python** (should be available in all repositories as `python`)
+
+**Pip** (in some package managers it is called `python3-pip` and in some it is called `python-pip`... Watchout though. python-pip can be for python2 and python3-pip for python3 so get the python3 version)
+
+**pulseaudio** (should be available in all package managers as `pulseaudio`)
+
+**gambas3** (very important in running the GUI version of piri, but unneeded in running the CLI (backend) version. Please install it if you plan to run the front-end)
+
+**ffplay** (should be available in most package managers as `ffplay`)
+
+**Pyaudio** `sudo pip3 install pyaudio`
+
+**speech_recognition** `sudo pip3 install SpeechRecognition`
+
+**Requests** `sudo pip3 install requests`
+
+(OPTIONAL DEPENDENCIES)
+
+**psmisc** (has been deprecated for now but I'd recommend installing it as the command `killall` might be used in later versions)
+
+
+
+After all dependencies are installed, you can run `python3 install.py` to install piri onto your system, and after, Piri is accessible by the start menu
+
 ## Usage:
 
-You can launch the assistant from terminal: `cd /path/to/piri.py && ./piri.py`
+You can launch the assistant from terminal after installing: `piri` for GUI verion and `pirivoice .py --standalone` or `pirivoice.py -s` for CLI version
+
+
+**IF YOU RUN THE COMMAND LINE VERSION**
 - You will see some warnings/errors at first, which are normal, after that it will print out "talk"
-- it will print what was recognized and if the activator is correct it will print "talk", you will also hear a sound
+- it will print what was recognized and if the activator is correct it will print "talk", you will also hear a sound and a notification will be displayed on screen
 - say your commands, and Piri will _try_ to execute them.
 
+**IF YOU RUN THE GUI VERSION**
+- Click the piri icon, and after a few seconds, you'll here a beep and a notification telling you to speak
+- It can take upto a few seconds to parse your command, but after, it will tell you wht it was able to find from the command and execute it
+
 ## Telemetry/Data collection:
-Piri does not directly collect any personal data nor recordings from users, because we (devs) don't need to. Data can be collected by 3rd parties such as Google (Google Text to Speech API)
+Piri does not directly collect any personal data nor recordings from users, because we (devs) don't need to.
+
+**NOTE: **Data can be collected by 3rd parties such as Google (Google Text to Speech API)
 
 The assistant also uses Google's TTS URL API (http://www.google.com/speech-api/v1/synthesize?lang=en-us&text=example+of+a+random+text+here+xd)
 The text to speech is powered by Google

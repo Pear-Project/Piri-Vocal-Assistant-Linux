@@ -1,7 +1,7 @@
 # Gambas Project File 3.0
 Title=Piri - GTK Voice Assistant
 Startup=FMain
-Version=11.0.2
+Version=11.0.4
 Component=gb.image
 Component=gb.gtk
 Component=gb.form
